@@ -1,0 +1,16 @@
+cell_id,manufacturer,chemistry,capacity_mah,voltage_nominal,batch_number,received_date,notes
+CELL-101,Panasonic,NMC,3000,3.6,BATCH-2025-A,2025-03-01,Valid row
+CELL-102,Panasonic,NMC,3000,3.6,BATCH-2025-A,2025-03-01,Valid row
+,Samsung SDI,NCA,4000,3.7,BATCH-2025-B,2025-03-05,Missing cell_id - should fail
+CELL-104,Samsung SDI,NCA,4000,3.7,BATCH-2025-B,2025-03-05,Valid row
+CELL-105,,LFP,3200,3.2,BATCH-2025-C,2025-03-10,Missing manufacturer - should fail
+CELL-106,CATL,UNKNOWN_CHEM,3200,3.2,BATCH-2025-C,2025-03-10,Invalid chemistry value - should fail or warn
+CELL-107,CATL,LFP,-500,3.2,BATCH-2025-C,2025-03-10,Negative capacity - should fail
+CELL-108,LG Energy,NMC,2800,3.65,BATCH-2025-D,2025-03-12,Valid row
+CELL-109,LG Energy,NMC,2800,3.65,BATCH-2025-D,not-a-date,Invalid date format - should fail
+CELL-110,LG Energy,NMC,2800,0,BATCH-2025-D,2025-03-12,Zero voltage - should fail or warn
+CELL-001,BYD,LFP,3500,3.2,BATCH-2025-E,2025-03-15,Duplicate of existing CELL-001 - should warn
+CELL-112,BYD,LFP,3500,3.2,BATCH-2025-E,2025-03-15,Valid row
+CELL-113,BYD,LFP,ABCD,3.2,BATCH-2025-E,2025-03-15,Non-numeric capacity - should fail
+CELL-114,BYD,LFP,3500,3.2,BATCH-2025-E,2025-03-15,Valid row
+CELL-115,Panasonic,NMC,3000,3.6,BATCH-2025-A,2025-03-01,Valid row
