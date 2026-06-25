@@ -34,7 +34,7 @@ RECEIVED → INCOMING_QC → STORAGE → UNDER_TEST → PASSED / FAILED → DISP
 - CSV bulk import for creating and updating cells
 - Row-level CSV validation errors
 - Download/export the current cell list as CSV
-- - View all battery cells in a searchable and state-filterable table with real-time cell counts
+- View all battery cells in a searchable and state-filterable table with real-time cell counts
 
 ## Setup
 
