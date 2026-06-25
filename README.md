@@ -128,6 +128,4 @@ The import endpoint validates each row separately. Valid rows are processed even
 └──────────────────────────────────────────────┘
 ```
 
-### DEMO VIDEO
 
-https://drive.google.com/drive/folders/1r-eOWUTQ8a6ks4CBO3uAuCWZrMK7XQCx?usp=sharing
